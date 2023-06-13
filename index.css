@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 input {
     width: 200px;
 }
@@ -8,6 +12,10 @@ input::placeholder {
 
 .limit_red {
     color: red;
+}
+
+.limit {
+    color: darkcyan;
 }
 
 button {
@@ -35,8 +43,8 @@ button {
     height: 100%;
     z-index: 200;
     background-color: rgba(0, 0, 0, 0.7);
-    /* opacity: 0;
-    visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
     transition: all 0.2s ease;
     padding: 20px;
   }
@@ -79,7 +87,7 @@ button {
     transition: 0.5s;
   }
 
-  .popup-add-btn {
+  .popup-add-limit-btn {
     line-height: 20px;
     font-size: 15px;
     border-radius: 2px;

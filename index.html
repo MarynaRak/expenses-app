@@ -22,17 +22,18 @@
         </select>
     </form>
     <div class="js-popup popup">
-        <div class="js-popup_content popup-content">
-            <button class="js-popup-close-btn popup-close-btn"></button>
+        <div class="js-popup-content popup-content">
+            <!-- <button class="js-popup-close-btn popup-close-btn"></button> -->
             <p class="popup-description">Введите лимит</p>
             <form class="add-limit-form">
-                <input type="text" class="js-add-limit-input add-limit-input">
+                <input type="number" class="js-add-limit-input add-limit-input">
             </form>
-            <button class="js-popup-add-btn popup-add-btn">Добавить</button>
+            <div class="empty-limit"></div>
+            <button class="js-popup-add-limit-btn popup-add-limit-btn">Добавить</button>
         </div>
     </div>
     
-    <p>Лимит: <span class="js-limit limit_red"></span></p>
+    <p>Лимит: <span class="js-limit limit">Введите Ваш лимит</span></p>
     <button class="js-edit-btn edit-btn"></button>
     <p>Всего: <span class="js-total"></span> </p>
     <p>Статус: <span class="js-status"></span></p>
@@ -44,5 +45,5 @@
     </div>
     
     <script src="index.js"></script>
-</body>
+ </body>
 </html>
