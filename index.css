@@ -1,0 +1,15 @@
+input {
+    width: 200px;
+}
+
+input::placeholder {
+ justify-content: end;
+}
+
+.limit_red {
+    color: red;
+}
+
+.select-area {
+    width: 300px;
+}
