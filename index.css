@@ -10,6 +10,11 @@ input::placeholder {
     color: red;
 }
 
+.edit-btn {
+    width: 30px;
+    height: 30px;
+}
+
 .select-area {
     width: 300px;
 }
