@@ -10,11 +10,78 @@ input::placeholder {
     color: red;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 .edit-btn {
     width: 30px;
     height: 30px;
+    background-image: url(edit-btn.png);
+    background-size: contain;
 }
 
 .select-area {
-    width: 300px;
+    width: 200px;
 }
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* opacity: 0;
+    visibility: hidden; */
+    transition: all 0.2s ease;
+    padding: 20px;
+  }
+  
+  .body_fixed {
+    overflow: hidden;
+  }
+  
+  .popup-open {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .popup-content {
+    position: relative;
+    width: 500px;
+    max-height: 100%;
+    overflow-y: auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .popup-close-btn {
+    position: absolute;
+    top: 32px;
+    right: 34px;
+    width: 15px;
+    height: 15px;
+    background-image: url(close-popup-btn.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    transition: 0.5s;
+  }
+
+  .popup-add-btn {
+    line-height: 20px;
+    font-size: 15px;
+    border-radius: 2px;
+    background-color: green;
+  }

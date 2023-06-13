@@ -12,11 +12,20 @@ const limitNode = document.querySelector('.js-limit');
 const statusNode = document.querySelector('.js-status');
 // const selectedValue = document.querySelector('.select-area');
 
+const POPUP_OPENED_CLASSNAME = "popup-open";
+const BODY_FIXED_CLASSNAME = "body-fixed";
+
+const bodyNode = document.querySelector('body');
+const popupNode = document.querySelector('.js-popup');
+const popupContentNode = document.querySelector('.js-popup-close-btn');
+const popupOpenBtn = document.querySelector('.js-edit-btn');
+const popupClosedBtn = document.querySelector('.js-popup-close-btn');
+
+const limitInputNode = document.querySelector('.js-add-limit-input');
+
 const expenses = [];
-
+ 
 init(expenses);
-
-
 
 buttonNode.addEventListener('click', function () {
     

@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="reset.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <title>Expenses app</title>
 </head>
 <body>
     <h1>Учет расходов</h1>
-    <input class="js-input"  placeholder="Введите сумму">
+    <input class="js-input" type="number" placeholder="Введите сумму">
     <button class="js-button">Добавить</button>
 
     <form action="">
@@ -20,9 +21,19 @@
             <option value="">Развлечения</option>
         </select>
     </form>
-
+    <div class="js-popup popup">
+        <div class="js-popup_content popup-content">
+            <button class="js-popup-close-btn popup-close-btn"></button>
+            <p class="popup-description">Введите лимит</p>
+            <form class="add-limit-form">
+                <input type="text" class="js-add-limit-input add-limit-input">
+            </form>
+            <button class="js-popup-add-btn popup-add-btn">Добавить</button>
+        </div>
+    </div>
+    
     <p>Лимит: <span class="js-limit limit_red"></span></p>
-    <button class="edit-btn"></button>
+    <button class="js-edit-btn edit-btn"></button>
     <p>Всего: <span class="js-total"></span> </p>
     <p>Статус: <span class="js-status"></span></p>
 
