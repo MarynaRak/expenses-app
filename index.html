@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="reset.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="reset.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Expenses app</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Учет расходов</h1>
-    <input class="js-input" type="number" placeholder="Введите сумму">
+    <input class="js-input" type="number" placeholder="Введите сумму" />
     <button class="js-button">Добавить</button>
 
-    <form action="">
-        <select name="" id="" class="select-area">
-            <option value="">Кафе и рестораны</option>
-            <option value="">Транспорт</option>
-            <option value="">Аптека</option>
-            <option value="">Развлечения</option>
-        </select>
-    </form>
+    <select name="" id="select-area" class="select-area">
+      <option hidden disabled selected value="Категория">Категория</option>
+      <option value="Кафе">Кафе и рестораны</option>
+      <option value="Транспорт">Транспорт</option>
+      <option value="Аптека">Аптека</option>
+      <option value="Развлечения">Развлечения</option>
+    </select>
+
     <div class="js-popup popup">
-        <div class="js-popup-content popup-content">
-            <!-- <button class="js-popup-close-btn popup-close-btn"></button> -->
-            <p class="popup-description">Введите лимит</p>
-            <form class="add-limit-form">
-                <input type="number" class="js-add-limit-input add-limit-input">
-            </form>
-            <div class="empty-limit"></div>
-            <button class="js-popup-add-limit-btn popup-add-limit-btn">Добавить</button>
-        </div>
+      <div class="js-popup-content popup-content">
+        <!-- <button class="js-popup-close-btn popup-close-btn"></button> -->
+        <p class="popup-description">Введите лимит</p>
+        <form class="add-limit-form">
+          <input type="number" class="js-add-limit-input add-limit-input" />
+        </form>
+        <div class="empty-limit"></div>
+        <button class="js-popup-add-limit-btn popup-add-limit-btn">
+          Добавить
+        </button>
+      </div>
     </div>
-    
-    <p>Лимит: <span class="js-limit limit">Введите Ваш лимит</span></p>
+
+    <p>Лимит: <span class="js-limit limit">3000</span></p>
     <button class="js-edit-btn edit-btn"></button>
-    <p>Всего: <span class="js-total"></span> </p>
+    <p>Всего: <span class="js-total"></span></p>
     <p>Статус: <span class="js-status"></span></p>
 
-
     <h2>История трат:</h2>
-    <div class="js-history">
-        
-    </div>
-    
+    <div class="js-history"></div>
+    <button class="js-close-btn">Сбросить данные</button>
+
     <script src="index.js"></script>
- </body>
+  </body>
 </html>

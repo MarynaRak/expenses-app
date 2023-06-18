@@ -93,3 +93,7 @@ button {
     border-radius: 2px;
     background-color: green;
   }
+
+  ol {
+    list-style: decimal;
+  }
